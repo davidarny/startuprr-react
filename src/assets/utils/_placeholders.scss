@@ -1,0 +1,39 @@
+@import "variables";
+
+%bg-image-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+%bg-image-contain {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+%horizontal-center {
+    display: block;
+    margin: auto;
+}
+
+%vertical-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+%all-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+%viewport-height {
+    min-height: 100vh;
+}
+
+%secondary-color {
+    color: $secondary-color;
+}

@@ -1,0 +1,91 @@
+@import "~assets/utils/_variables";
+@import "~assets/utils/_mixins";
+@import "~assets/utils/_placeholders";
+
+.header {
+    $background-opacity: 0.5;
+    $background-blur: 2px;
+
+    @extend %viewport-height;
+    position: relative;
+    padding: 0 !important;
+
+    &__inner {
+        @extend %vertical-center;
+    }
+
+    &__background {
+        @extend %bg-image-cover;
+        @include background-image("./assets/header-background.jpg");
+        @include square_size(100%);
+        position: absolute;
+        opacity: $background-opacity;
+        filter: blur($background-blur);
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__title {
+        $min-font: 30px;
+        $max-font: 64px;
+
+        @include position($top: -8px);
+        @include fluid-type($xs, $lg, $min-font, $max-font);
+        font-weight: 800;
+        margin: 0.15em 0 0.25em;
+    }
+
+    &__scroll-icon {
+        @extend %bg-image-cover;
+        @include background-image("./assets/scroll-icon.png");
+        @include md {
+            @include square_size(55px)
+        }
+        @include lg {
+            @include square_size(60px);
+        }
+        @include square_size(45px);
+        margin: 2em auto auto;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        border-radius: $base-border-radius;
+
+        &--upper {
+            $min-font: 14px;
+            $max-font: 18px;
+
+            @include fluid-type($xs, $lg, $min-font, $max-font);
+        }
+
+        &--lower {
+            $min-font: 8px;
+            $max-font: 18px;
+
+            @include fluid-type($xs, $lg, $min-font, $max-font);
+            @include position($top: -12px);
+            color: white;
+            margin: 0 0 1em;
+
+            .header__subtitle__inner {
+                background-color: $main-color;
+                display: inline-block;
+                padding: 0.75em;
+                border-radius: $base-border-radius;
+            }
+        }
+
+        &__first-word {
+            font-weight: 800;
+
+            &__first-letter {
+                @extend %secondary-color;
+            }
+        }
+    }
+}

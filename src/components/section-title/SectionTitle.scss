@@ -1,0 +1,55 @@
+@import "~assets/utils/_mixins";
+@import "~assets/utils/_variables";
+@import "~assets/utils/_placeholders";
+
+.section-title {
+    $section-font-weight: 800;
+    $subtitle-font-weight: 400;
+    $icons-size: 1em;
+    $icons-aside-margin: 0.5em;
+    $min-font: 20px;
+    $max-font: 26px;
+
+    @include fluid-type($xs, $lg, $min-font, $max-font);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: $section-font-weight;
+
+    &--first-word-focus {
+        > .section-title__first-part {
+            @extend %secondary-color;
+        }
+    }
+
+    &--second-word-focus {
+        > .section-title__last-part {
+            @extend %secondary-color;
+        }
+    }
+
+    &__subtitle {
+        font-size: 0.65em;
+        font-weight: $subtitle-font-weight;
+        color: $secondary-text-color;
+        text-transform: none;
+        margin-top: 0.5em;
+    }
+
+    &__icon {
+        @extend %bg-image-contain;
+        @include position(-2px);
+        @include background-image("./assets/title-shape.png");
+        @include square_size($icons-size);
+        display: inline-block;
+        vertical-align: middle;
+
+        &--left {
+            margin-right: $icons-aside-margin;
+        }
+
+        &--right {
+            margin-left: $icons-aside-margin;
+            transform: rotate(180deg);
+        }
+    }
+}
