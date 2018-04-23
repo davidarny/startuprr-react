@@ -1,1 +1,1 @@
-export { SubtitleLower as default } from "./SubtitleLower";
+export { SubtitleLower } from "./SubtitleLower";

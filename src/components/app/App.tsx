@@ -1,4 +1,4 @@
-import Header from "@components/header";
+import { Header } from "@components";
 import * as React from "react";
 
 export const App: React.SFC = () => {

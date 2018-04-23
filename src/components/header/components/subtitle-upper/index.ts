@@ -1,1 +1,1 @@
-export { SubtitleUpper as default } from "./SubtitleUpper";
+export { SubtitleUpper } from "./SubtitleUpper";

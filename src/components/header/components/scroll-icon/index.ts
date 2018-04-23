@@ -1,0 +1,1 @@
+export { ScrollIcon } from "./ScrollIcon";

@@ -1,0 +1,17 @@
+@import "~assets/utils/_placeholders";
+@import "~assets/utils/_mixins";
+
+.header__scroll-icon {
+    @extend %bg-image-cover;
+    @include background-image("./assets/scroll-icon.png");
+    @include md {
+        @include square_size(55px)
+    }
+    @include lg {
+        @include square_size(60px);
+    }
+    @include square_size(45px);
+    margin: 2em auto auto;
+    cursor: pointer;
+    border-radius: 50%;
+}

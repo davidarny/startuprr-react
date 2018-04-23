@@ -1,1 +1,2 @@
-export { SectionTitle as default } from "./SectionTitle";
+export { SectionTitle } from "./SectionTitle";
+export { ISectionTitleProps } from "./ISectionTitleProps";

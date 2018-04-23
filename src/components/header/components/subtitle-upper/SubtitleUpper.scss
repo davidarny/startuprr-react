@@ -1,0 +1,8 @@
+@import "~assets/utils/_mixins";
+
+.header__subtitle--upper {
+    $min-font: 14px;
+    $max-font: 18px;
+
+    @include fluid-type($xs, $lg, $min-font, $max-font);
+}

@@ -1,0 +1,14 @@
+@import "~assets/utils/_placeholders";
+@import "~assets/utils/_mixins";
+
+$background-opacity: 0.5;
+$background-blur: 2px;
+
+.header__background {
+    @extend %bg-image-cover;
+    @include background-image("./assets/header-background.jpg");
+    @include square_size(100%);
+    position: absolute;
+    opacity: $background-opacity;
+    filter: blur($background-blur);
+}

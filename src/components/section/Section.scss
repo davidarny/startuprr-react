@@ -1,5 +1,6 @@
-@import "mixins";
-@import "placeholders";
+@import "~assets/utils/_variables";
+@import "~assets/utils/_mixins";
+@import "~assets/utils/_placeholders";
 
 .section {
     $icon-font-size: 26px;
@@ -13,6 +14,11 @@
     color: $main-color;
 
     &__inner {
+        @include square_size(100%);
+    }
+
+    .container {
+        @extend %all-center;
         width: 100%;
     }
 
