@@ -1,4 +1,4 @@
-import { Header, Navbar } from "@components";
+import { Header, Navbar, Offerings } from "@components";
 import * as React from "react";
 
 export const App: React.SFC = () => {
@@ -6,6 +6,7 @@ export const App: React.SFC = () => {
         <>
             <Header/>
             <Navbar/>
+            <Offerings/>
         </>
     );
 };

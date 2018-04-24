@@ -1,8 +1,11 @@
 import * as React from "react";
-import { ISectionProps } from "@components/section";
+import { ISectionProps } from "./ISectionProps";
 import "./Section.scss";
 
-export const Section: React.SFC<ISectionProps> = ({ children, className }) => {
+export const Section: React.SFC<ISectionProps> = ({
+                                                      children,
+                                                      className,
+                                                  }) => {
     return (
         <div className={`section ${insertClassName(className)}`}>
             <div
@@ -17,9 +20,9 @@ export const Section: React.SFC<ISectionProps> = ({ children, className }) => {
     );
 };
 
-function insertClassName(className?: string, infix?: boolean): string {
+function insertClassName(className?: string, postfix?: boolean): string {
     if (className) {
-        if (infix) {
+        if (postfix) {
             return `${className}__inner`;
         } else {
             return className;

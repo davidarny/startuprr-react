@@ -1,0 +1,18 @@
+@import "~assets/utils/variables.scss";
+
+$item-bottom-margin: 30px;
+
+.offerings__item {
+    text-align: center;
+    margin-bottom: $item-bottom-margin;
+}
+
+.offerings__item:last-child {
+    margin-bottom: 0;
+}
+
+.offerings__item:hover {
+    & .offerings__item__icon {
+        background-color: $secondary-color;
+    }
+}

@@ -1,6 +1,6 @@
 import * as React from "react";
+import { ISectionTitleProps } from "./ISectionTitleProps";
 import "./SectionTitle.scss";
-import { ISectionTitleProps } from "@components/section-title";
 
 export const SectionTitle: React.SFC<ISectionTitleProps> = ({
                                                                 focusPart,

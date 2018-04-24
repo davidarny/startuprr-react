@@ -6,10 +6,8 @@ export const SubtitleLower: React.SFC = () => {
     return (
         <HeaderItem className={"header__subtitle header__subtitle--lower"}>
             <div className="header__subtitle__inner">
-                <span className="header__subtitle__first-word">
-                    <span
-                        className="header__subtitle__first-word__first-letter"
-                    >
+                <span className="subtitle__first-word">
+                    <span className="subtitle__first-word__first-letter">
                         S
                     </span>
                     <span>tartuprr,&nbsp;</span>
