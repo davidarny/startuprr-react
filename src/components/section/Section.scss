@@ -17,10 +17,6 @@
         @include square_size(100%);
     }
 
-    .container {
-        width: 100%;
-    }
-
     &--dark {
         background-color: $main-color;
         color: $background-color;
