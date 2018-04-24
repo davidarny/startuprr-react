@@ -1,5 +1,5 @@
-@import "~assets/utils/_placeholders";
-@import "~assets/utils/_mixins";
+@import "~assets/utils/placeholders";
+@import "~assets/utils/mixins";
 
 .header__scroll-icon {
     @extend %bg-image-cover;

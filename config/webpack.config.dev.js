@@ -95,7 +95,6 @@ module.exports = {
             ".json",
             ".web.jsx",
             ".jsx",
-            ".scss",
         ],
         alias: {
 

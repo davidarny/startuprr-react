@@ -1,0 +1,50 @@
+@import "~assets/utils/variables.scss";
+@import "~assets/utils/mixins.scss";
+@import "~assets/utils/placeholders.scss";
+
+.navbar {
+    $navbar-min-height: 100px;
+    $padding-bottom: 20px;
+
+    @include md {
+        &-brand {
+            display: none;
+        }
+
+        &-nav {
+            @include horizontal-center;
+            float: none !important;
+        }
+    }
+    min-height: $navbar-min-height;
+    padding-bottom: $padding-bottom;
+    margin-bottom: 0;
+
+    & .container {
+        @include position($top: 25px)
+    }
+
+    &-brand {
+        @extend %vertical-center;
+        padding: 0;
+        margin-left: 15px;
+    }
+
+    &-header {
+        @include lg {
+            position: initial;
+        }
+        position: relative;
+    }
+
+    &-nav {
+        text-transform: uppercase;
+        font-weight: 600;
+
+        li.active a {
+            background-color: $secondary-color !important;
+            color: $background-color !important;
+            border-radius: $base-border-radius;
+        }
+    }
+}
