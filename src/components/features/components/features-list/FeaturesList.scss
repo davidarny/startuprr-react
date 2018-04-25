@@ -1,0 +1,16 @@
+@import "~assets/common.scss";
+
+.features__list {
+    @include breakpoint($md) {
+        $min-font: 12px;
+        $max-font: 16px;
+
+        @include fluid-type($xs, $sm, $min-font, $max-font);
+    }
+    padding-top: 90px;
+    padding-left: 15px;
+
+    .features__subtitle {
+        font-size: inherit !important;
+    }
+}

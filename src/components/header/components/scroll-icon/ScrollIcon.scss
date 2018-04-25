@@ -1,5 +1,4 @@
-@import "~assets/utils/placeholders";
-@import "~assets/utils/mixins";
+@import "~assets/common.scss";
 
 .header__scroll-icon {
     @extend %bg-image-cover;

@@ -1,0 +1,1 @@
+export { FeaturesIpad } from "./FeaturesIpad";

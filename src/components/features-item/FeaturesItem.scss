@@ -1,0 +1,37 @@
+@import "~assets/common.scss";
+
+$list-item-max-width: 320px;
+$item-bottom-margin: 30px;
+
+.features__list__item {
+    $margin-bottom: 75px;
+
+    @include breakpoint($md) {
+        max-width: none;
+    }
+    margin: auto auto $margin-bottom;
+    max-width: $list-item-max-width;
+
+    &:last-child {
+        @include breakpoint($md) {
+            margin-bottom: $margin-bottom;
+        }
+        margin-bottom: 0;
+    }
+}
+
+.features__description {
+    @extend %features__description;
+}
+
+.features__title {
+    @extend %features__title;
+}
+
+.features__content {
+    @extend %features__content;
+}
+
+.features__subtitle {
+    @extend %features__subtitle;
+}

@@ -1,0 +1,30 @@
+@import "~assets/common.scss";
+
+.features {
+    $icon-font-size: 40px;
+    $list-item-max-width: 320px;
+
+    position: relative;
+
+    .section__inner {
+        overflow: hidden;
+    }
+
+    &__icon {
+        @include breakpoint($md) {
+            text-align: center;
+        }
+        @include breakpoint($xs) {
+            text-align: left;
+        }
+        @include square_size($icon-font-size);
+        width: 20%;
+        display: block;
+        font-size: em($icon-font-size);
+        float: left;
+    }
+
+    &__title {
+        color: $background-color !important;
+    }
+}

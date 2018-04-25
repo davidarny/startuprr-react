@@ -1,12 +1,5 @@
-@import "~assets/utils/functions.scss";
-@import "~assets/utils/variables.scss";
-
-$title-bottom-margin: 10px;
+@import "~assets/common.scss";
 
 .offerings__item__title {
-    text-transform: uppercase;
-    line-height: 1.2;
-    font-weight: bold;
-    margin: auto auto em($title-bottom-margin);
-    color: $features-title-color;
+    @extend %features__title;
 }

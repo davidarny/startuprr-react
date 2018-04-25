@@ -43,7 +43,13 @@
     }
 }
 
-@mixin position($top: false, $left: false, $bottom: false, $right: false, $isAbsolute: false) {
+@mixin position(
+    $top: false,
+    $left: false,
+    $bottom: false,
+    $right: false,
+    $isAbsolute: false
+) {
     @if ($isAbsolute) {
         position: absolute;
     } @else {

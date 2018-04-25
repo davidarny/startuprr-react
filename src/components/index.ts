@@ -5,3 +5,5 @@ export { Header } from "./header";
 export { Navbar } from "./navbar";
 export { Offerings } from "./offerings";
 export { Button } from "./button";
+export { Features } from "./features";
+export { FeaturesItem } from "./features-item";
