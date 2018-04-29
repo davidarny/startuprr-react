@@ -8,7 +8,7 @@ export const OfferingsItemSubtitle: TOfferingsItemSubtitle = ({
                                                                   subtitle,
                                                               }) => {
     return (
-        <div className="offerings__item__subtitle">
+        <div className={"offerings__item__subtitle"}>
             <p>{subtitle}</p>
         </div>
     );

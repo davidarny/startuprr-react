@@ -6,7 +6,7 @@ export const OfferingsItemTitle: React.SFC<IOfferingsItemTitle> = ({
                                                                        title,
                                                                    }) => {
     return (
-        <div className="offerings__item__title">
+        <div className={"offerings__item__title"}>
             <span>{title}</span>
         </div>
     );

@@ -2,6 +2,7 @@ import * as React from "react";
 import { Section, SectionTitle } from "@components";
 import { FeaturesIpad, FeaturesList } from "@components/features/components";
 import { Col, Grid, Row } from "@components/vendor";
+import { insertClassName } from "@utils";
 import "./Feature.scss";
 
 export const Features: React.SFC = () => {
@@ -9,10 +10,10 @@ export const Features: React.SFC = () => {
         <Section className={"features"} isDark={true}>
             <Grid>
                 <i
-                    className={
-                        "section__icon section__icon--rotated \ " +
-                        "ion ion-ios-key"
-                    }
+                    className={insertClassName(
+                        "section__icon section__icon--rotated",
+                        "ion ion-ios-key",
+                    )}
                 />
                 <Row>
                     <Col sm={12}>

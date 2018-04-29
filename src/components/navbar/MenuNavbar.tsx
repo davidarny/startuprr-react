@@ -11,7 +11,7 @@ export const MenuNavbar: React.SFC = () => {
                     <Navbar.Toggle/>
                     <Navbar.Brand>
                         <a href="/">
-                            <img src={logo} alt="brand"/>
+                            <img src={logo} alt={"brand"}/>
                         </a>
                     </Navbar.Brand>
                 </Navbar.Header>

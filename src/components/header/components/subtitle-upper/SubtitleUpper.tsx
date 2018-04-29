@@ -5,7 +5,7 @@ import "./SubtitleUpper.scss";
 export const SubtitleUpper: React.SFC = () => {
     return (
         <HeaderItem className={"header__subtitle header__subtitle--upper"}>
-            <span className="text-uppercase">What are you waiting for?</span>
+            <span className={"text-uppercase"}>What are you waiting for?</span>
         </HeaderItem>
     );
 };

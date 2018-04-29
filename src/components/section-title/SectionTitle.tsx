@@ -1,6 +1,7 @@
 import * as React from "react";
 import { ISectionTitleProps } from "./ISectionTitleProps";
 import "./SectionTitle.scss";
+import { insertClassName } from "@utils";
 
 export const SectionTitle: React.SFC<ISectionTitleProps> = ({
                                                                 focusPart,
@@ -10,18 +11,18 @@ export const SectionTitle: React.SFC<ISectionTitleProps> = ({
                                                             }) => {
     return (
         <div
-            className={`
-                section-title
-                header__item
-                section-title--${focusPart}-word-focus
-                `}
+            className={insertClassName(
+                "section-title",
+                "header__item",
+                `section-title--${focusPart}-word-focus`,
+            )}
         >
-            <span className="section-title__icon section-title__icon--left"/>
-            <span className="section-title__first-part">{firstPart}</span>
-            <span className="section-title__last-part"> {lastPart}</span>
-            <span className="section-title__icon section-title__icon--right"/>
+            <span className={"section-title__icon section-title__icon--left"}/>
+            <span className={"section-title__first-part"}>{firstPart}</span>
+            <span className={"section-title__last-part"}> {lastPart}</span>
+            <span className={"section-title__icon section-title__icon--right"}/>
             {subtitle &&
-            <div className="section-title__subtitle">{subtitle}</div>}
+            <div className={"section-title__subtitle"}>{subtitle}</div>}
         </div>
 
     );

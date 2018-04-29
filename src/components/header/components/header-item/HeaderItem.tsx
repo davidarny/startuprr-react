@@ -7,7 +7,7 @@ export const HeaderItem: React.SFC<IHeaderItemProps> = ({
                                                             className,
                                                         }) => {
     return (
-        <div className={`header__item ${className}`}>
+        <div className={`header__item ${className ? className : ""}`}>
             {children}
         </div>
     );
