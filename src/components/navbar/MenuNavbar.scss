@@ -1,7 +1,6 @@
 @import "~assets/common.scss";
 
 .navbar {
-    $min-height-navbar: 100px;
     $padding-bottom: 20px;
     $z-index-navbar: 9999;
 
@@ -20,7 +19,6 @@
             float: none !important;
         }
     }
-    min-height: $min-height-navbar;
     padding-bottom: $padding-bottom;
     margin-bottom: 0;
 
