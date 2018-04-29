@@ -23,6 +23,7 @@ export const MenuNavItem: React.SFC<IMenuNavItemProps> = ({
                     to={to}
                     smooth={true}
                     spy={true}
+                    isDynamic={true}
                     ignoreCancelEvents={true}
                     duration={SCROLL_DURATION}
                     onClick={onClick}

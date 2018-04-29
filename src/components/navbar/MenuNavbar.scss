@@ -3,10 +3,12 @@
 .navbar {
     $min-height-navbar: 100px;
     $padding-bottom: 20px;
+    $z-index-navbar: 9999;
 
     border-right: none !important;
     border-left: none !important;
     border-radius: 0 !important;
+    z-index: $z-index-navbar;
 
     @include breakpoint($sm, $md) {
         &-brand {
@@ -23,7 +25,7 @@
     margin-bottom: 0;
 
     & .container {
-        @include position($top: 5px)
+        @include position($top: 10px)
     }
 
     &-brand {
