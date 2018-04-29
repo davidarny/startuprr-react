@@ -10,7 +10,9 @@ export const MenuNavbar: React.SFC = () => {
                 <Navbar.Header>
                     <Navbar.Toggle/>
                     <Navbar.Brand>
-                        <img src={logo} alt="brand"/>
+                        <a href="/">
+                            <img src={logo} alt="brand"/>
+                        </a>
                     </Navbar.Brand>
                 </Navbar.Header>
                 <Navbar.Collapse>
