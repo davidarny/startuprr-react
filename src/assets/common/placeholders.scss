@@ -36,7 +36,7 @@
 }
 
 %secondary-color {
-    color: $secondary-color;
+    color: $color-secondary;
 }
 
 %features__description {
@@ -46,15 +46,15 @@
 }
 
 %features__title {
-    color: $features-title-color;
+    color: $color-features-title;
     text-transform: uppercase;
     line-height: 1.2;
     font-weight: bold;
-    margin: auto auto em($title-bottom-margin);
+    margin: auto auto em($margin-title-bottom);
 }
 
 %features__content {
-    color: $secondary-text-color;
+    color: $color-secondary-text;
     line-height: 1.7;
 }
 
@@ -62,5 +62,5 @@
     font-size: 12px;
     color: #aaaaaa;
     line-height: 1.2;
-    margin: auto auto em($subtitle-bottom-margin);
+    margin: auto auto em($margin-subtitle-bottom);
 }

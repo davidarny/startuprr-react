@@ -4,7 +4,11 @@
     $navbar-min-height: 100px;
     $padding-bottom: 20px;
 
-    @include md {
+    border-right: none !important;
+    border-left: none !important;
+    border-radius: 0 !important;
+
+    @include breakpoint($sm, $md) {
         &-brand {
             display: none;
         }
@@ -19,12 +23,11 @@
     margin-bottom: 0;
 
     & .container {
-        @include position($top: 25px)
+        @include position($top: 5px)
     }
 
     &-brand {
-        @extend %vertical-center;
-        padding: 0;
+        padding: 0 !important;
         margin-left: 15px;
     }
 
@@ -40,9 +43,9 @@
         font-weight: 600;
 
         li.active a {
-            background-color: $secondary-color !important;
-            color: $background-color !important;
-            border-radius: $base-border-radius;
+            background-color: $color-secondary !important;
+            color: $color-background !important;
+            border-radius: $border-radius-base;
         }
     }
 }

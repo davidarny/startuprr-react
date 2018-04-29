@@ -1,14 +1,15 @@
 import * as React from "react";
 import { Section, SectionTitle } from "@components";
 import { OfferingsItem } from "./components/offerings-item";
+import { Col, Grid, Row } from "@components/vendor";
 import "./Offerings.scss";
 
 export const Offerings: React.SFC = () => {
     return (
         <Section className={"offerings"}>
-            <div className="container">
-                <div className="row">
-                    <div className="col-sm-12">
+            <Grid>
+                <Row>
+                    <Col sm={12}>
                         <SectionTitle
                             focusPart={"first"}
                             firstPart={"What"}
@@ -18,9 +19,9 @@ export const Offerings: React.SFC = () => {
                                 "& solutions, this is our main services list"
                             }
                         />
-                    </div>
-                </div>
-                <div className="row offerings__items">
+                    </Col>
+                </Row>
+                <Row className={"offerings__items"}>
                     <OfferingsItem
                         title={"Responsive & Multipurpose"}
                         iconName={"desktop"}
@@ -69,8 +70,8 @@ export const Offerings: React.SFC = () => {
                             "nihil nostrum suscipit."
                         }
                     />
-                </div>
-            </div>
+                </Row>
+            </Grid>
         </Section>
     );
 };

@@ -8,8 +8,8 @@
     display: inline-block;
     cursor: pointer;
     border: 1px solid $button-border-color;
-    border-radius: $base-border-radius;
-    color: $secondary-text-color;
+    border-radius: $border-radius-base;
+    color: $color-secondary-text;
     text-transform: uppercase;
     line-height: $line-height;
     padding: $font-size;
@@ -25,8 +25,8 @@
     }
 
     &:hover {
-        background-color: $secondary-color;
-        color: $background-color;
-        border: 1px solid $secondary-color;
+        background-color: $color-secondary;
+        color: $color-background;
+        border: 1px solid $color-secondary;
     }
 }

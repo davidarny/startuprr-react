@@ -1,6 +1,6 @@
 @import "variables";
 
-@function em($pixels, $context: $browser-context) {
+@function em($pixels, $context: $font-size-default) {
     @if (unitless($pixels)) {
         $pixels: $pixels * 1px;
     }

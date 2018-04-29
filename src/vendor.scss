@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:500,800");
-// Bootstrap
-@import "~bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
 // Ionicons icons
 $ionicons-font-path: "~assets/fonts";
 @import "~ionicons/dist/scss/ionicons";

@@ -1,20 +1,21 @@
 import * as React from "react";
 import { Section, SectionTitle } from "@components";
 import { FeaturesIpad, FeaturesList } from "@components/features/components";
+import { Col, Grid, Row } from "@components/vendor";
 import "./Feature.scss";
 
 export const Features: React.SFC = () => {
     return (
         <Section className={"features"} isDark={true}>
-            <div className="container">
+            <Grid>
                 <i
                     className={
                         "section__icon section__icon--rotated \ " +
                         "ion ion-ios-key"
                     }
                 />
-                <div className="row">
-                    <div className="col-sm-12">
+                <Row>
+                    <Col sm={12}>
                         <SectionTitle
                             focusPart={"last"}
                             firstPart={"Amazing"}
@@ -25,22 +26,17 @@ export const Features: React.SFC = () => {
                                 "everything that was impossible for you!"
                             }
                         />
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-sm-12 col-md-5 col-lg-4">
+                    </Col>
+                </Row>
+                <Row>
+                    <Col sm={12} md={5} lg={4}>
                         <FeaturesList/>
-                    </div>
-                    <div
-                        className={
-                            "hidden-xs hidden-sm col-md-7 \ " +
-                            "col-lg-8"
-                        }
-                    >
+                    </Col>
+                    <Col xsHidden={true} smHidden={true} md={7} lg={8}>
                         <FeaturesIpad/>
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Grid>
         </Section>
     );
 };

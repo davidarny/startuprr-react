@@ -1,26 +1,24 @@
-@import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
-
 // Colors
-$main-color: #333333 !default;
-$background-color: #f9f9f9 !default;
-$secondary-color: #00a99d !default;
-$secondary-text-color: #8a8a8a !default;
+$color-main: #333333;
+$color-background: #f9f9f9;
+$color-secondary: #00a99d;
+$color-secondary-text: #8a8a8a;
+$color-features-title: #606060;
 
 // Fonts
-$raleway-font: 'Raleway', sans-serif;
+$font-raleway: 'Raleway', sans-serif;
 
 // Breakpoints
-$lg: $screen-lg;
-$md: $screen-md;
-$sm: $screen-sm;
-$xs: $screen-xs;
+$lg: 1200px;
+$md: 992px;
+$sm: 768px;
+$xs: 480px;
 
 // Other
-$base-border-radius: 4px !default;
-$browser-context: 14;
+$border-radius-base: 4px;
+$font-size-default: 14;
 $separator: 0.02px;
-$features-title-color: #606060;
 
 // features-item
-$subtitle-bottom-margin: 20px;
-$title-bottom-margin: 10px;
+$margin-subtitle-bottom: 20px;
+$margin-title-bottom: 10px;

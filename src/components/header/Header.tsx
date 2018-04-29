@@ -7,19 +7,16 @@ import {
     SubtitleUpper,
     Title,
 } from "@components/header/components";
+import { Col, Grid, Row } from "@components/vendor";
 import "./Header.scss";
 
 export const Header: React.SFC = () => {
     return (
         <Section className={"header"}>
             <HeaderBackground/>
-            <div className="container">
-                <div className="row">
-                    <div
-                        className={
-                            "col-sm-12 col-md-12 col-lg-8 col-lg-offset-0"
-                        }
-                    >
+            <Grid>
+                <Row>
+                    <Col sm={12} md={12} lg={8} lgOffset={0}>
                         <SubtitleUpper/>
                         <Title/>
                         <SubtitleLower/>
@@ -29,9 +26,9 @@ export const Header: React.SFC = () => {
                             lastPart={"doing this"}
                         />
                         <ScrollIcon/>
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Grid>
         </Section>
     );
 };
