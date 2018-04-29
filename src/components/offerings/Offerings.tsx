@@ -6,7 +6,7 @@ import "./Offerings.scss";
 
 export const Offerings: React.SFC = () => {
     return (
-        <Section className={"offerings"}>
+        <Section className={"offerings"} id={"offerings"}>
             <Grid>
                 <Row>
                     <Col sm={12}>

@@ -1,7 +1,7 @@
 @import "~assets/common.scss";
 
 .navbar {
-    $navbar-min-height: 100px;
+    $min-height-navbar: 100px;
     $padding-bottom: 20px;
 
     border-right: none !important;
@@ -18,7 +18,7 @@
             float: none !important;
         }
     }
-    min-height: $navbar-min-height;
+    min-height: $min-height-navbar;
     padding-bottom: $padding-bottom;
     margin-bottom: 0;
 
@@ -42,10 +42,9 @@
         text-transform: uppercase;
         font-weight: 600;
 
-        li.active a {
+        .nav__item.active {
             background-color: $color-secondary !important;
             color: $color-background !important;
-            border-radius: $border-radius-base;
         }
     }
 }

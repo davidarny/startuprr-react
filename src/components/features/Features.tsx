@@ -7,7 +7,7 @@ import "./Feature.scss";
 
 export const Features: React.SFC = () => {
     return (
-        <Section className={"features"} isDark={true}>
+        <Section className={"features"} id={"features"} isDark={true}>
             <Grid>
                 <i
                     className={insertClassName(

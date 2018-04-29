@@ -12,7 +12,7 @@ import "./Header.scss";
 
 export const Header: React.SFC = () => {
     return (
-        <Section className={"header"}>
+        <Section className={"header"} id={"header"}>
             <HeaderBackground/>
             <Grid>
                 <Row>
