@@ -17,11 +17,29 @@ export class MenuNavbar extends Component<IMenuNavbarProps, IMenuNavbarState> {
         minHeight: "100px",
         padding: "25px 0",
     };
+    private static readonly ID = "navbar";
     state: IMenuNavbarState = { expanded: false };
+
+    private static setParentHeight(): void {
+        const navbar = document.getElementById(MenuNavbar.ID);
+        if (!navbar) {
+            return;
+        }
+        const parent = navbar.parentElement;
+        if (!parent) {
+            return;
+        }
+        parent.style.height = MenuNavbar.DEFAULT_STYLE.minHeight as string;
+    }
+
+    componentDidMount() {
+        MenuNavbar.setParentHeight();
+    }
 
     render() {
         return (
             <Navbar
+                id={MenuNavbar.ID}
                 style={{ ...MenuNavbar.DEFAULT_STYLE, ...this.props.style }}
                 collapseOnSelect={true}
                 expanded={this.state.expanded}

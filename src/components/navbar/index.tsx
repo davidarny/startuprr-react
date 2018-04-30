@@ -16,7 +16,12 @@ const renderStickyNavbar = (props: IStickyProps) => {
 // TODO: handling window resize
 const StickyNavbar: React.SFC = () => {
     return (
-        <Sticky topOffset={window.innerHeight}>{renderStickyNavbar}</Sticky>
+        <Sticky
+            disableCompensation={true}
+            topOffset={window.innerHeight}
+        >
+            {renderStickyNavbar}
+        </Sticky>
     );
 };
 

@@ -1,9 +1,7 @@
 import * as React from "react";
-import { Link, NavItem } from "@components/vendor";
+import { Link, NavItem, SCROLL_DURATION } from "@components/vendor";
 import { IMenuNavItemProps } from "./IMenuNavItemProps";
 import "./MenuNavItem.scss";
-
-const SCROLL_DURATION: number = 500;
 
 export const MenuNavItem: React.SFC<IMenuNavItemProps> = ({
                                                               title,
@@ -23,7 +21,6 @@ export const MenuNavItem: React.SFC<IMenuNavItemProps> = ({
                     to={to}
                     smooth={true}
                     spy={true}
-                    isDynamic={true}
                     ignoreCancelEvents={true}
                     duration={SCROLL_DURATION}
                     onClick={onClick}

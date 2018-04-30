@@ -6,4 +6,6 @@ import * as Navbar from "react-bootstrap/lib/Navbar";
 import * as NavItem from "react-bootstrap/lib/NavItem";
 import Link from "react-scroll/modules/components/Link";
 
-export { Grid, Row, Col, Nav, Navbar, NavItem, Link };
+const SCROLL_DURATION: number = 500;
+
+export { Grid, Row, Col, Nav, Navbar, NavItem, Link, SCROLL_DURATION };
