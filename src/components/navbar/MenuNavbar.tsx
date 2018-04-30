@@ -25,7 +25,7 @@ export class MenuNavbar extends Component<IMenuNavbarProps, IMenuNavbarState> {
                 <Navbar.Header>
                     <Navbar.Toggle onClick={this.onForceToggle}/>
                     <Navbar.Brand>
-                        <a href="/">
+                        <a href={"/startuprr-react"}>
                             <img src={logo} alt={"brand"}/>
                         </a>
                     </Navbar.Brand>
