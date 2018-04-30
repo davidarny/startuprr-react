@@ -20,7 +20,14 @@ export class StickyNavbar extends PureComponent<{}, IStickyNavbarState> {
     }
 
     componentDidMount() {
-        window.addEventListener("resize", this.onResize);
+        const options: AddEventListenerOptions = { passive: true };
+        window.addEventListener("resize", this.updateInnerHeight, options);
+        window.addEventListener("scroll", this.updateInnerHeight, options);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.updateInnerHeight);
+        window.removeEventListener("scroll", this.updateInnerHeight);
     }
 
     render() {
@@ -35,7 +42,7 @@ export class StickyNavbar extends PureComponent<{}, IStickyNavbarState> {
     }
 
     @bind
-    private onResize() {
+    private updateInnerHeight() {
         this.setState({ innerHeight: window.innerHeight });
     }
 
