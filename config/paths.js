@@ -58,7 +58,6 @@ function getAppAliases(configPath) {
 // config after eject: we're in ./config/
 module.exports = {
     dotenv: resolveApp(".env"),
-    appRoot: resolveApp(".."),
     appBuild: resolveApp("build"),
     appPublic: resolveApp("public"),
     appHtml: resolveApp("public/index.html"),
