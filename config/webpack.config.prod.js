@@ -142,11 +142,28 @@ module.exports = {
                     // assets smaller than specified size as data URLs to avoid requests.
                     {
                         test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
-                        loader: require.resolve("url-loader"),
-                        options: {
-                            limit: 10000,
-                            name: "static/media/[name].[hash:8].[ext]",
-                        },
+                        use: [
+                            {
+                                loader: require.resolve("url-loader"),
+                                options: {
+                                    limit: 10000,
+                                    name: "static/media/[name].[hash:8].[ext]",
+                                },
+                            },
+                            {
+                                loader: require.resolve("image-webpack-loader"),
+                                options: {
+                                    mozjpeg: {
+                                        progressive: true,
+                                        quality: 65,
+                                    },
+                                    pngquant: {
+                                        quality: "65-90",
+                                        speed: 4,
+                                    },
+                                },
+                            },
+                        ],
                     },
                     {
                         test: /\.(js|jsx|mjs)$/,
