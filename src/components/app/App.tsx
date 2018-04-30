@@ -1,16 +1,13 @@
 import * as React from "react";
-import { Features, Header, MenuNavbar, Offerings } from "@components";
-import { Sticky, StickyContainer } from "react-sticky";
+import { Features, Header, Offerings } from "@components";
+import { StickyContainer } from "react-sticky";
+import { StickyNavbar } from "@components/navbar";
 
 export const App: React.SFC = () => {
     return (
         <StickyContainer>
             <Header/>
-            {/* TODO: handling window resize */}
-            <Sticky topOffset={window.innerHeight}>
-                {(props: { style: object }) =>
-                    <MenuNavbar style={props.style}/>}
-            </Sticky>
+            <StickyNavbar/>
             <Offerings/>
             <Features/>
         </StickyContainer>

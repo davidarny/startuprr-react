@@ -1,23 +1,28 @@
 import * as React from "react";
-import { Component } from "react";
+import { Component, CSSProperties } from "react";
 import { Nav, Navbar } from "@components/vendor";
 import { MenuNavItem } from "@components/navbar/components";
 import { IMenuNavbarState } from "./IMenuNavbarState";
+import { IMenuNavbarProps } from "./IMenuNavbarProps";
 import bind from "bind-decorator";
 import logo from "./assets/logo.png";
 import "./MenuNavbar.scss";
 
-export interface IMenuNavbarProps {
-    style: object;
-}
-
 export class MenuNavbar extends Component<IMenuNavbarProps, IMenuNavbarState> {
+    public static readonly STICKY_STYLE: CSSProperties = {
+        minHeight: "50px",
+        padding: "5px 0",
+    };
+    private static readonly DEFAULT_STYLE: CSSProperties = {
+        minHeight: "100px",
+        padding: "25px 0",
+    };
     state: IMenuNavbarState = { expanded: false };
 
     render() {
         return (
             <Navbar
-                style={this.props.style}
+                style={{ ...MenuNavbar.DEFAULT_STYLE, ...this.props.style }}
                 collapseOnSelect={true}
                 expanded={this.state.expanded}
                 onToggle={this.onToggle}

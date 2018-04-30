@@ -13,12 +13,12 @@
     background-position: center;
 }
 
-%horizontal-center {
+%center-horizontal {
     display: block;
     margin: auto;
 }
 
-%vertical-center {
+%center-vertical {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);

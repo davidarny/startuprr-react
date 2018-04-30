@@ -16,6 +16,6 @@ $item-bottom-margin: 30px;
 
     &__wrapper {
         width: inherit;
-        @extend %vertical-center;
+        @extend %center-vertical;
     }
 }
