@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Component, CSSProperties } from "react";
+import { CSSProperties, PureComponent } from "react";
 import { Nav, Navbar } from "@components/vendor";
 import { MenuNavItem } from "@components/navbar/components";
 import { IMenuNavbarState } from "./IMenuNavbarState";
@@ -8,7 +8,7 @@ import bind from "bind-decorator";
 import logo from "./assets/logo.png";
 import "./MenuNavbar.scss";
 
-export class MenuNavbar extends Component<IMenuNavbarProps, IMenuNavbarState> {
+class MenuNavbar extends PureComponent<IMenuNavbarProps, IMenuNavbarState> {
     public static readonly STICKY_STYLE: CSSProperties = {
         minHeight: "50px",
         padding: "5px 0",
@@ -108,3 +108,5 @@ export class MenuNavbar extends Component<IMenuNavbarProps, IMenuNavbarState> {
         this.setState({ expanded: !this.state.expanded });
     }
 }
+
+export { MenuNavbar };
