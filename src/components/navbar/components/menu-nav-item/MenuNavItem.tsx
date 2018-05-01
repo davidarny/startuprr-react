@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link, NavItem, SCROLL_DURATION } from "@components/vendor";
 import { IMenuNavItemProps } from "./IMenuNavItemProps";
+import { getStickyOffset } from "@utils";
 import "./MenuNavItem.scss";
 
 export const MenuNavItem: React.SFC<IMenuNavItemProps> = ({
@@ -21,6 +22,7 @@ export const MenuNavItem: React.SFC<IMenuNavItemProps> = ({
                     to={to}
                     smooth={true}
                     spy={true}
+                    offset={getStickyOffset(to)}
                     ignoreCancelEvents={true}
                     duration={SCROLL_DURATION}
                     onClick={onClick}

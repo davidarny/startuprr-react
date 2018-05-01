@@ -1,0 +1,54 @@
+@import "~assets/common.scss";
+@import "~components/features/Feature";
+
+.more-features {
+    $features-padding: 20px;
+    $features-icon-font-size: 28px;
+
+    @extend .features;
+
+    .features__title {
+        color: $color-features-title !important;
+    }
+
+    .features__list__item {
+        @include breakpoint($lg, $max-min: min-width) {
+            width: 33%;
+            max-width: none;
+            padding-right: $features-padding;
+        }
+        @include breakpoint($md, $lg) {
+            width: 50%;
+            max-width: none;
+            padding-right: $features-padding;
+        }
+        @include breakpoint($md - $separator) {
+            width: 100%;
+            max-width: none;
+        }
+        float: left;
+    }
+
+    .features__icon {
+        font-size: em($features-icon-font-size);
+        position: relative;
+        height: 70px;
+
+        &:before {
+            @extend %all-center;
+            @extend %bg-image-cover;
+            @include background-image("./assets/more-features-icon.png");
+            content: '';
+            width: 40px;
+            height: inherit;
+            display: block;
+            border-radius: 4px;
+        }
+
+        .ion {
+            @extend %all-center;
+            top: 20px !important;
+            color: $color-background;
+        }
+    }
+}

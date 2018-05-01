@@ -6,10 +6,9 @@
     $icon-square-size: 38px;
     $base-padding: 75px;
 
-    padding: $base-padding 0 0;
-    width: 100%;
-    min-height: 100vh;
     position: relative;
+    padding: $base-padding 0;
+    width: 100%;
     color: $color-main;
 
     &__inner {

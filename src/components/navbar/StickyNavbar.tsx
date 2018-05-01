@@ -4,7 +4,7 @@ import bind from "bind-decorator";
 import { Sticky } from "react-sticky";
 import { IStickyNavbarState } from "./IStickyNavbarState";
 import { IStickyProps } from "./IStickyProps";
-import { MenuNavbar } from "./MenuNavbar";
+import { MenuNavbar } from "@components";
 
 export class StickyNavbar extends PureComponent<{}, IStickyNavbarState> {
     state: IStickyNavbarState = { innerHeight: window.innerHeight };

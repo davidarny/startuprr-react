@@ -9,12 +9,13 @@ import logo from "./assets/logo.png";
 import "./MenuNavbar.scss";
 
 class MenuNavbar extends PureComponent<IMenuNavbarProps, IMenuNavbarState> {
+    public static readonly MENU_HEIGHT = 100;
     public static readonly STICKY_STYLE: CSSProperties = {
-        minHeight: "50px",
+        minHeight: `${MenuNavbar.MENU_HEIGHT / 2}px`,
         padding: "5px 0",
     };
     private static readonly DEFAULT_STYLE: CSSProperties = {
-        minHeight: "100px",
+        minHeight: `${MenuNavbar.MENU_HEIGHT}px`,
         padding: "25px 0",
     };
     private static readonly ID = "navbar";
@@ -74,7 +75,9 @@ class MenuNavbar extends PureComponent<IMenuNavbarProps, IMenuNavbarState> {
                             onClick={this.onToggle}
                         />
                         <MenuNavItem
-                            title={"Blog"}
+                            isLink={true}
+                            to={"more-features"}
+                            title={"More feature"}
                             onClick={this.onToggle}
                         />
                         <MenuNavItem

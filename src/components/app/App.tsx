@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Features, Header, Offerings } from "@components";
+import { Features, Header, MoreFeatures, Offerings } from "@components";
 import { StickyContainer } from "react-sticky";
 import { StickyNavbar } from "@components/navbar";
 
@@ -10,6 +10,7 @@ export const App: React.SFC = () => {
             <StickyNavbar/>
             <Offerings/>
             <Features/>
+            <MoreFeatures/>
         </StickyContainer>
     );
 };
