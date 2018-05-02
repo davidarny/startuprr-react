@@ -9,20 +9,22 @@ import "./MenuNavbar.scss";
 
 // TODO: implement scroll-spy
 class MenuNavbar extends PureComponent<IMenuNavbarProps, IMenuNavbarState> {
-    public static readonly MENU_HEIGHT = 100;
-    public static readonly STICKY_STYLE: CSSProperties = {
+    static readonly MENU_HEIGHT = 100;
+    static readonly PADDING = 25;
+    static readonly BORDER_WIDTH = 1;
+    static readonly STICKY_STYLE: CSSProperties = {
         minHeight: `${MenuNavbar.MENU_HEIGHT / 2}px`,
-        padding: "5px 0",
+        padding: `${MenuNavbar.PADDING / 5}px 0`,
     };
-    private static readonly DEFAULT_STYLE: CSSProperties = {
+    static readonly DEFAULT_STYLE: CSSProperties = {
         minHeight: `${MenuNavbar.MENU_HEIGHT}px`,
-        padding: "25px 0",
+        padding: `${MenuNavbar.PADDING}px 0`,
     };
-    private static readonly ID = "navbar";
+    static readonly ELEMENT_ID = "navbar";
     state: IMenuNavbarState = { activeKey: 0 };
 
     private static setParentHeight(): void {
-        const navbar = document.getElementById(MenuNavbar.ID);
+        const navbar = document.getElementById(MenuNavbar.ELEMENT_ID);
         if (!navbar) {
             return;
         }
@@ -41,7 +43,7 @@ class MenuNavbar extends PureComponent<IMenuNavbarProps, IMenuNavbarState> {
         return (
             <Navbar
                 data-scroll-header={true}
-                id={MenuNavbar.ID}
+                id={MenuNavbar.ELEMENT_ID}
                 style={{ ...MenuNavbar.DEFAULT_STYLE, ...this.props.style }}
                 collapseOnSelect={true}
             >

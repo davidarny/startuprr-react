@@ -6,12 +6,13 @@ import { IStickyNavbarState } from "./IStickyNavbarState";
 import { IStickyProps } from "./IStickyProps";
 import { MenuNavbar } from "@components";
 import { SCROLL_DURATION } from "@components/vendor";
+import { IStickyOptions } from "./IStickyNavbarOptions";
 
 const SmoothScroll = require("smooth-scroll");
 
 export class StickyNavbar extends PureComponent<{}, IStickyNavbarState> {
     state: IStickyNavbarState = { innerHeight: window.innerHeight };
-    protected options = { speed: SCROLL_DURATION };
+    protected options: IStickyOptions = { speed: SCROLL_DURATION };
     protected selector = "a[href*=\"#\"]";
     protected scroll = new SmoothScroll();
 
@@ -30,6 +31,7 @@ export class StickyNavbar extends PureComponent<{}, IStickyNavbarState> {
         window.addEventListener("resize", this.updateInnerHeight, options);
         window.addEventListener("scroll", this.updateInnerHeight, options);
         window.addEventListener("click", this.onSmoothScrollClick);
+        this.setNavbarOffset();
     }
 
     componentWillUnmount() {
@@ -49,6 +51,13 @@ export class StickyNavbar extends PureComponent<{}, IStickyNavbarState> {
         );
     }
 
+    private setNavbarOffset() {
+        this.options.offset =
+            (MenuNavbar.MENU_HEIGHT / 2) +
+            (MenuNavbar.PADDING / 2.5) +
+            (MenuNavbar.BORDER_WIDTH * 2);
+    }
+
     @bind
     private updateInnerHeight() {
         this.setState({ innerHeight: window.innerHeight });
@@ -63,11 +72,12 @@ export class StickyNavbar extends PureComponent<{}, IStickyNavbarState> {
     private animateSmoothScroll(event: WindowEventMap["click"],
                                 selector: string,
                                 settings: object): void {
+        event.preventDefault();
         if (!event.target) {
             return;
         }
-        const toggle: HTMLAnchorElement = (event.target as HTMLAnchorElement)
-            .closest(selector) as HTMLAnchorElement;
+        const target = event.target as HTMLAnchorElement;
+        const toggle = target.closest<"a">(selector as "a");
         if (!toggle || toggle.tagName.toLowerCase() !== "a") {
             return;
         }
@@ -78,7 +88,6 @@ export class StickyNavbar extends PureComponent<{}, IStickyNavbarState> {
         if (!anchor) {
             return;
         }
-        event.preventDefault();
         this.scroll.animateScroll(anchor, toggle, settings || {});
     }
 
