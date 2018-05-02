@@ -1,1 +1,0 @@
-export { MenuNavItem } from "./MenuNavItem";

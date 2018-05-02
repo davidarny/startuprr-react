@@ -1,13 +1,13 @@
 import * as React from "react";
 import { CSSProperties, PureComponent } from "react";
-import { Nav, Navbar } from "@components/vendor";
-import { MenuNavItem } from "@components/navbar/components";
+import { Nav, Navbar, NavItem } from "@components/vendor";
 import { IMenuNavbarState } from "./IMenuNavbarState";
 import { IMenuNavbarProps } from "./IMenuNavbarProps";
 import bind from "bind-decorator";
 import logo from "./assets/logo.png";
 import "./MenuNavbar.scss";
 
+// TODO: implement scroll-spy
 class MenuNavbar extends PureComponent<IMenuNavbarProps, IMenuNavbarState> {
     public static readonly MENU_HEIGHT = 100;
     public static readonly STICKY_STYLE: CSSProperties = {
@@ -19,7 +19,7 @@ class MenuNavbar extends PureComponent<IMenuNavbarProps, IMenuNavbarState> {
         padding: "25px 0",
     };
     private static readonly ID = "navbar";
-    state: IMenuNavbarState = { expanded: false };
+    state: IMenuNavbarState = { activeKey: 0 };
 
     private static setParentHeight(): void {
         const navbar = document.getElementById(MenuNavbar.ID);
@@ -40,14 +40,13 @@ class MenuNavbar extends PureComponent<IMenuNavbarProps, IMenuNavbarState> {
     render() {
         return (
             <Navbar
+                data-scroll-header={true}
                 id={MenuNavbar.ID}
                 style={{ ...MenuNavbar.DEFAULT_STYLE, ...this.props.style }}
                 collapseOnSelect={true}
-                expanded={this.state.expanded}
-                onToggle={this.onToggle}
             >
                 <Navbar.Header>
-                    <Navbar.Toggle onClick={this.onForceToggle}/>
+                    <Navbar.Toggle/>
                     <Navbar.Brand>
                         <a href={"/startuprr-react"}>
                             <img src={logo} alt={"brand"}/>
@@ -55,35 +54,49 @@ class MenuNavbar extends PureComponent<IMenuNavbarProps, IMenuNavbarState> {
                     </Navbar.Brand>
                 </Navbar.Header>
                 <Navbar.Collapse>
-                    <Nav pullRight={true}>
-                        <MenuNavItem
-                            onClick={this.onToggle}
-                            isLink={true}
-                            to={"header"}
-                            title={"Home"}
-                        />
-                        <MenuNavItem
-                            isLink={true}
-                            to={"offerings"}
-                            title={"Offerings"}
-                            onClick={this.onToggle}
-                        />
-                        <MenuNavItem
-                            isLink={true}
-                            to={"features"}
-                            title={"Features"}
-                            onClick={this.onToggle}
-                        />
-                        <MenuNavItem
-                            isLink={true}
-                            to={"more-features"}
-                            title={"More feature"}
-                            onClick={this.onToggle}
-                        />
-                        <MenuNavItem
-                            title={"Contact"}
-                            onClick={this.onToggle}
-                        />
+                    <Nav
+                        pullRight={true}
+                        activeKey={this.state.activeKey}
+                        onSelect={this.onSelect}
+                    >
+                        <NavItem
+                            eventKey={0}
+                            className={"nav__item"}
+                            data-scroll={true}
+                            href={"#header"}
+                        >
+                            Home
+                        </NavItem>
+                        <NavItem
+                            eventKey={1}
+                            className={"nav__item"}
+                            data-scroll={true}
+                            href={"#offerings"}
+                        >
+                            Offerings
+                        </NavItem>
+                        <NavItem
+                            eventKey={2}
+                            className={"nav__item"}
+                            data-scroll={true}
+                            href={"#features"}
+                        >
+                            Features
+                        </NavItem>
+                        <NavItem
+                            eventKey={3}
+                            className={"nav__item"}
+                            data-scroll={true}
+                            href={"#more-features"}
+                        >
+                            More features
+                        </NavItem>
+                        <NavItem
+                            eventKey={4}
+                            className={"nav__item"}
+                        >
+                            Contact
+                        </NavItem>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
@@ -91,16 +104,8 @@ class MenuNavbar extends PureComponent<IMenuNavbarProps, IMenuNavbarState> {
     }
 
     @bind
-    private onForceToggle() {
-        this.setState({ expanded: !this.state.expanded });
-    }
-
-    @bind
-    private onToggle() {
-        if (!this.state.expanded) {
-            return;
-        }
-        this.setState({ expanded: !this.state.expanded });
+    private onSelect(selectedKey: /* tslint:disable:no-any */ any) {
+        this.setState({ activeKey: selectedKey });
     }
 }
 

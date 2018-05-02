@@ -43,3 +43,43 @@
         }
     }
 }
+
+@import "~assets/common.scss";
+
+.navbar-nav {
+    $font-weight-navbar: 600;
+    $color-nav-item: #777777;
+    $padding-nav-item: 15px;
+    $border-radius-nav-item: 4px;
+    $line-height-nav-item: 20px;
+
+    text-transform: uppercase;
+    font-weight: $font-weight-navbar;
+
+    .nav__item {
+        border-radius: $border-radius-nav-item;
+        line-height: $line-height-nav-item;
+        color: $color-nav-item;
+        cursor: pointer;
+
+        &:hover {
+            color: $color-main;
+            text-decoration: none;
+        }
+
+        & .active {
+            background-color: $color-secondary !important;
+            color: $color-background !important;
+        }
+    }
+
+    a {
+        color: inherit !important;
+        background-color: transparent !important;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+

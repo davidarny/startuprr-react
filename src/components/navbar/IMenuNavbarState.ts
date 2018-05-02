@@ -1,3 +1,3 @@
 export interface IMenuNavbarState {
-    expanded: boolean;
+    activeKey: number;
 }
