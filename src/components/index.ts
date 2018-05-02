@@ -8,3 +8,4 @@ export { Button } from "./button";
 export { Features } from "./features";
 export { FeaturesItem } from "./features-item";
 export { MoreFeatures } from "./more-features";
+export { Skills } from "./skills";
