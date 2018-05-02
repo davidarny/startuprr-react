@@ -81,14 +81,6 @@ class MenuNavbar extends PureComponent<IMenuNavbarProps, IMenuNavbarState> {
                             onClick={this.onToggle}
                         />
                         <MenuNavItem
-                            title={"Pages"}
-                            onClick={this.onToggle}
-                        />
-                        <MenuNavItem
-                            title={"Mega Menu"}
-                            onClick={this.onToggle}
-                        />
-                        <MenuNavItem
                             title={"Contact"}
                             onClick={this.onToggle}
                         />

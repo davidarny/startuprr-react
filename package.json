@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://davidarutiunian.github.io/startuprr-react",
   "dependencies": {
+    "@types/jump.js": "^1.0.2",
     "@types/react-bootstrap": "^0.32.9",
     "@types/react-scroll": "^1.5.3",
     "@types/react-sticky": "^5.0.6",
@@ -25,6 +26,7 @@
     "image-webpack-loader": "^4.2.0",
     "ionicons": "^3.0.0",
     "jest": "22.1.4",
+    "jump.js": "^1.0.2",
     "mobx": "^4.1.1",
     "mobx-react": "^5.0.0",
     "object-assign": "4.1.1",
