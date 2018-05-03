@@ -1,0 +1,12 @@
+.sample-works {
+    $margin-top-sample-row: 50px;
+    $padding-col: 1px;
+
+    .samples__row {
+        margin-top: $margin-top-sample-row;
+
+        > div[class^="col"] {
+            padding: $padding-col;
+        }
+    }
+}

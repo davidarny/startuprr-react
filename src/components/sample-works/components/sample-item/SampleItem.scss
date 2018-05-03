@@ -1,0 +1,40 @@
+@import "~assets/common.scss";
+
+.samples__item {
+    $height-sample-item: 250px;
+    $color-item-background: #8a8a8a;
+
+    width: 100%;
+    height: $height-sample-item;
+    position: relative;
+    background-color: $color-item-background;
+    border-radius: $border-radius-base;
+
+    &__content {
+        @include position($top: 1px, $left: 1px, $isAbsolute: true);
+        @include square_size(calc(100% - 2px));
+
+        cursor: pointer;
+        opacity: 0;
+        will-change: opacity;
+        transition: opacity .25s ease-in-out;
+        border-radius: $border-radius-base;
+
+        > .icon {
+            &:first-child {
+                color: $color-secondary;
+                background-color: $color-background;
+            }
+
+            &:last-child {
+                color: $color-background;
+                background-color: $color-main;
+            }
+        }
+
+        &:hover {
+            opacity: 1;
+            background-color: $color-secondary;
+        }
+    }
+}

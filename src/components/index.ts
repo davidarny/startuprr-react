@@ -9,3 +9,5 @@ export { Features } from "./features";
 export { FeaturesItem } from "./features-item";
 export { MoreFeatures } from "./more-features";
 export { Skills } from "./skills";
+export { SampleWorks } from "./sample-works";
+export { Icon } from "./icon";

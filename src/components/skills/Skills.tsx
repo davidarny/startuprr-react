@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Section } from "@components";
+import { Icon, Section } from "@components";
 import { Col, Grid, Row } from "@components/vendor";
 import { SkillsCircle } from "@components/skills/components";
 import "./Skills.scss";
@@ -8,7 +8,7 @@ export const Skills: React.SFC = () => {
     return (
         <Section className={"skills"} id={"skills"} isDark={true}>
             <Grid>
-                <i className="section__icon ion ion-ios-briefcase"/>
+                <Icon icon={"ios-briefcase"}/>
                 <Row>
                     <Col xs={6} sm={4} lg={2}>
                         <SkillsCircle

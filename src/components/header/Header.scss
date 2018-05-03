@@ -6,7 +6,7 @@
     padding: 0 !important;
 
     .container {
-        @extend %all-center;
+        @extend %center-all;
         text-align: center;
         width: 100%;
     }

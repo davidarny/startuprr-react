@@ -1,9 +1,6 @@
 @import "~assets/common.scss";
 
 .section {
-    $icon-font-size: 26px;
-    $icon-border-radius: 4px;
-    $icon-square-size: 38px;
     $base-padding: 75px;
 
     position: relative;
@@ -18,23 +15,5 @@
     &--dark {
         background-color: $color-main;
         color: $color-background;
-    }
-
-    &__icon {
-        @include square_size(38px);
-        @include position($top: 0, $left: 50%, $isAbsolute: true);
-        transform: translateY(-50%) translateX(-50%) rotate(45deg);
-        font-size: $icon-font-size;
-        background-color: $color-secondary;
-        border-radius: $icon-border-radius;
-
-        &:before {
-            @include position($top: 50%, $left: 50%, $isAbsolute: true);
-            transform: translateX(-50%) translateY(-50%) rotate(-45deg);
-        }
-
-        &--rotated:before {
-            transform: translateX(-50%) translateY(-50%) rotate(45deg);
-        }
     }
 }

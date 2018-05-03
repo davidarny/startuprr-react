@@ -1,20 +1,14 @@
 import * as React from "react";
-import { Section, SectionTitle } from "@components";
+import { Icon, Section, SectionTitle } from "@components";
 import { FeaturesIpad, FeaturesList } from "@components/features/components";
 import { Col, Grid, Row } from "@components/vendor";
-import { insertClassName } from "@utils";
 import "./Feature.scss";
 
 export const Features: React.SFC = () => {
     return (
         <Section className={"features"} id={"features"} isDark={true}>
             <Grid>
-                <i
-                    className={insertClassName(
-                        "section__icon section__icon--rotated",
-                        "ion ion-ios-key",
-                    )}
-                />
+                <Icon icon={"ios-key"} isRotated={true}/>
                 <Row>
                     <Col sm={12}>
                         <SectionTitle
