@@ -2,6 +2,9 @@
 
 .navbar {
     $z-index-navbar: 9999;
+    $transition: min-height, padding .25s ease-out;
+    $margin-left-brand: 15px;
+    $font-weight-nav: 600;
 
     @include breakpoint($sm, $md) {
         &-brand {
@@ -16,14 +19,14 @@
     margin-bottom: 0 !important;
     z-index: $z-index-navbar;
     transform: translateZ(0);
-    transition: min-height, padding-top .25s ease-in-out;
+    transition: $transition;
     border-right: none !important;
     border-left: none !important;
     border-radius: 0 !important;
 
     &-brand {
         padding: 0 !important;
-        margin-left: 15px;
+        margin-left: $margin-left-brand;
     }
 
     &-header {
@@ -35,7 +38,7 @@
 
     &-nav {
         text-transform: uppercase;
-        font-weight: 600;
+        font-weight: $font-weight-nav;
 
         .nav__item.active {
             background-color: $color-secondary !important;
@@ -43,8 +46,6 @@
         }
     }
 }
-
-@import "~assets/common.scss";
 
 .navbar-nav {
     $font-weight-navbar: 600;
