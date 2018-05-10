@@ -101,6 +101,14 @@ class MenuNavbar extends PureComponent<IMenuNavbarProps, IMenuNavbarState> {
                         >
                             Skills
                         </NavItem>
+                        <NavItem
+                            eventKey={5}
+                            className={"nav__item"}
+                            data-scroll={true}
+                            href={"#sample-works"}
+                        >
+                            Sample works
+                        </NavItem>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
