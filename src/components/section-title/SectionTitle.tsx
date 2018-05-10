@@ -24,6 +24,5 @@ export const SectionTitle: React.SFC<ISectionTitleProps> = ({
             {subtitle &&
             <div className={"section-title__subtitle"}>{subtitle}</div>}
         </div>
-
     );
 };
