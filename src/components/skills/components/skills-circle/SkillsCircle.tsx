@@ -1,6 +1,6 @@
 import * as React from "react";
-import "./SkillsCircle.scss";
 import { ISkillsCircleProps } from "./ISkillsCircleProps";
+import "./SkillsCircle.scss";
 
 export const SkillsCircle: React.SFC<ISkillsCircleProps> = ({
                                                                 title,

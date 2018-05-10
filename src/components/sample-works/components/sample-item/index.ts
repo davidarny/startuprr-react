@@ -1,1 +1,2 @@
-export { SampleItem } from "./SmapleItem";
+export { SampleItem } from "./SampleItem";
+export { ISampleItemProps } from "./ISampleItemProps";

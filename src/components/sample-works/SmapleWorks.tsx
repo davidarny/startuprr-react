@@ -1,8 +1,8 @@
 import * as React from "react";
-import "./SmapleWorks.scss";
 import { Section, SectionTitle } from "@components";
 import { Col, Grid, Row } from "@components/vendor";
 import { SampleItem } from "@components/sample-works/components";
+import "./SmapleWorks.scss";
 
 export const SampleWorks: React.SFC = () => {
     return (
@@ -23,18 +23,90 @@ export const SampleWorks: React.SFC = () => {
                     </Col>
                 </Row>
                 <Row className={"samples__row"}>
-                    <SampleItem/>
-                    <SampleItem/>
-                    <SampleItem/>
-                    <SampleItem/>
-                    <SampleItem/>
-                    <SampleItem/>
-                    <SampleItem/>
-                    <SampleItem/>
-                    <SampleItem/>
-                    <SampleItem/>
-                    <SampleItem/>
-                    <SampleItem/>
+                    <SampleItem
+                        title={"Corporate Brochure"}
+                        subtitle={"Illustration / Print"}
+                        likesCount={138}
+                        leftIcon={"ios-attach"}
+                        rightIcon={"ios-search"}
+                    />
+                    <SampleItem
+                        title={"Corporate Brochure"}
+                        subtitle={"Illustration / Print"}
+                        likesCount={138}
+                        leftIcon={"ios-attach"}
+                        rightIcon={"ios-search"}
+                    />
+                    <SampleItem
+                        title={"Corporate Brochure"}
+                        subtitle={"Illustration / Print"}
+                        likesCount={138}
+                        leftIcon={"ios-attach"}
+                        rightIcon={"ios-search"}
+                    />
+                    <SampleItem
+                        title={"Corporate Brochure"}
+                        subtitle={"Illustration / Print"}
+                        likesCount={138}
+                        leftIcon={"ios-attach"}
+                        rightIcon={"ios-search"}
+                    />
+                    <SampleItem
+                        title={"Corporate Brochure"}
+                        subtitle={"Illustration / Print"}
+                        likesCount={138}
+                        leftIcon={"ios-attach"}
+                        rightIcon={"ios-search"}
+                    />
+                    <SampleItem
+                        title={"Corporate Brochure"}
+                        subtitle={"Illustration / Print"}
+                        likesCount={138}
+                        leftIcon={"ios-attach"}
+                        rightIcon={"ios-search"}
+                    />
+                    <SampleItem
+                        title={"Corporate Brochure"}
+                        subtitle={"Illustration / Print"}
+                        likesCount={138}
+                        leftIcon={"ios-attach"}
+                        rightIcon={"ios-search"}
+                    />
+                    <SampleItem
+                        title={"Corporate Brochure"}
+                        subtitle={"Illustration / Print"}
+                        likesCount={138}
+                        leftIcon={"ios-attach"}
+                        rightIcon={"ios-search"}
+                    />
+                    <SampleItem
+                        title={"Corporate Brochure"}
+                        subtitle={"Illustration / Print"}
+                        likesCount={138}
+                        leftIcon={"ios-attach"}
+                        rightIcon={"ios-search"}
+                    />
+                    <SampleItem
+                        title={"Corporate Brochure"}
+                        subtitle={"Illustration / Print"}
+                        likesCount={138}
+                        leftIcon={"ios-attach"}
+                        rightIcon={"ios-search"}
+                    />
+                    <SampleItem
+                        title={"Corporate Brochure"}
+                        subtitle={"Illustration / Print"}
+                        likesCount={138}
+                        leftIcon={"ios-attach"}
+                        rightIcon={"ios-search"}
+                    />
+                    <SampleItem
+                        title={"Corporate Brochure"}
+                        subtitle={"Illustration / Print"}
+                        likesCount={138}
+                        leftIcon={"ios-attach"}
+                        rightIcon={"ios-search"}
+                    />
                 </Row>
             </Grid>
         </Section>

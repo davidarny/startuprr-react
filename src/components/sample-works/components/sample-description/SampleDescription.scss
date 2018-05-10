@@ -1,0 +1,42 @@
+@import "~assets/common.scss";
+
+.sample__description {
+    $margin-top: 35px;
+
+    text-align: center;
+    color: $color-background;
+    margin-top: $margin-top;
+}
+
+.sample__title {
+    $font-size: 16px;
+
+    font-size: $font-size;
+    font-weight: 600;
+}
+
+.sample__subtitle {
+    $margin-top: 10px;
+    $font-size: 12px;
+
+    margin-top: $margin-top;
+    font-size: $font-size;
+}
+
+.sample__likes {
+    $margin-top: 20px;
+    $font-size: 12px;
+    $size-icon: 15px;
+    $font-size-icon: 16px;
+
+    font-size: $font-size;
+    margin-top: $margin-top;
+
+    > .icon {
+        @include square_size($size-icon);
+
+        background: transparent;
+        font-size: $font-size-icon;
+        vertical-align: middle;
+    }
+}
