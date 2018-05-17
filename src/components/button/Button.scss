@@ -29,4 +29,10 @@
         color: $color-background;
         border: 1px solid $color-secondary;
     }
+
+    &--active {
+        background-color: $color-secondary;
+        color: $color-background;
+        border: 1px solid $color-secondary;
+    }
 }

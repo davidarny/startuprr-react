@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Section, SectionTitle } from "@components";
+import { Button, Section, SectionTitle } from "@components";
 import { Col, Grid, Row } from "@components/vendor";
 import { SampleItem } from "@components/sample-works/components";
 import "./SmapleWorks.scss";
@@ -106,6 +106,14 @@ export const SampleWorks: React.SFC = () => {
                         likesCount={138}
                         leftIcon={"ios-attach"}
                         rightIcon={"ios-search"}
+                    />
+                </Row>
+                <Row>
+                    <Button
+                        alwaysActive={true}
+                        className={"sample-works__button"}
+                        value={"View all works"}
+                        href={"#"}
                     />
                 </Row>
             </Grid>
