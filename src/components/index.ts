@@ -11,3 +11,4 @@ export { MoreFeatures } from "./more-features";
 export { Skills } from "./skills";
 export { SampleWorks } from "./sample-works";
 export { Icon } from "./icon";
+export { CompanyFacts } from "./company-facts";

@@ -1,5 +1,6 @@
 import * as React from "react";
 import {
+    CompanyFacts,
     Features,
     Header,
     MoreFeatures,
@@ -20,6 +21,7 @@ export const App: React.SFC = () => {
             <MoreFeatures/>
             <Skills/>
             <SampleWorks/>
+            <CompanyFacts/>
         </StickyContainer>
     );
 };
