@@ -22,7 +22,7 @@
     "gh-pages": "^1.1.0",
     "html-webpack-plugin": "2.29.0",
     "image-webpack-loader": "^4.2.0",
-    "ionicons": "^4.1.1",
+    "ionicons": "^4.1.1x",
     "jest": "22.1.4",
     "mobx": "^4.1.1",
     "mobx-react": "^5.0.0",

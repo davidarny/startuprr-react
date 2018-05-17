@@ -24,11 +24,11 @@ export const SampleWorks: React.SFC = () => {
                 </Row>
                 <Row className={"samples__row"}>
                     <SampleItem
-                        title={"Corporate Brochure"}
-                        subtitle={"Illustration / Print"}
-                        likesCount={138}
-                        leftIcon={"ios-attach"}
-                        rightIcon={"ios-search"}
+                        title={"Protect Yourself"}
+                        subtitle={"Aids / security"}
+                        likesCount={26}
+                        leftIcon={"ios-bug"}
+                        rightIcon={"ios-git-branch"}
                     />
                     <SampleItem
                         title={"Corporate Brochure"}
@@ -38,74 +38,74 @@ export const SampleWorks: React.SFC = () => {
                         rightIcon={"ios-search"}
                     />
                     <SampleItem
-                        title={"Corporate Brochure"}
-                        subtitle={"Illustration / Print"}
-                        likesCount={138}
-                        leftIcon={"ios-attach"}
-                        rightIcon={"ios-search"}
+                        title={"Bosnia: We’re There to Help"}
+                        subtitle={"Military / Action"}
+                        likesCount={72}
+                        leftIcon={"ios-flame"}
+                        rightIcon={"ios-moon"}
                     />
                     <SampleItem
-                        title={"Corporate Brochure"}
-                        subtitle={"Illustration / Print"}
-                        likesCount={138}
-                        leftIcon={"ios-attach"}
-                        rightIcon={"ios-search"}
+                        title={"Dan Quayle Was Right"}
+                        subtitle={"Values / Declining"}
+                        likesCount={64}
+                        leftIcon={"ios-cog"}
+                        rightIcon={"ios-color-filter"}
                     />
                     <SampleItem
-                        title={"Corporate Brochure"}
-                        subtitle={"Illustration / Print"}
-                        likesCount={138}
-                        leftIcon={"ios-attach"}
-                        rightIcon={"ios-search"}
+                        title={"Seat Belts For Everyone"}
+                        subtitle={"Safety / Seatbelt"}
+                        likesCount={235}
+                        leftIcon={"ios-finger-print"}
+                        rightIcon={"ios-flash"}
                     />
                     <SampleItem
-                        title={"Corporate Brochure"}
-                        subtitle={"Illustration / Print"}
-                        likesCount={138}
-                        leftIcon={"ios-attach"}
-                        rightIcon={"ios-search"}
+                        title={"Be Fit For Life"}
+                        subtitle={"Health / Exercise"}
+                        likesCount={14}
+                        leftIcon={"ios-alarm"}
+                        rightIcon={"ios-aperture"}
                     />
                     <SampleItem
-                        title={"Corporate Brochure"}
-                        subtitle={"Illustration / Print"}
-                        likesCount={138}
-                        leftIcon={"ios-attach"}
-                        rightIcon={"ios-search"}
+                        title={"We Are Killing the Earth"}
+                        subtitle={"Environment / Recycle"}
+                        likesCount={59}
+                        leftIcon={"ios-basketball"}
+                        rightIcon={"ios-globe"}
                     />
                     <SampleItem
-                        title={"Corporate Brochure"}
-                        subtitle={"Illustration / Print"}
-                        likesCount={138}
-                        leftIcon={"ios-attach"}
-                        rightIcon={"ios-search"}
+                        title={"Why Not Smoke?"}
+                        subtitle={"Drugs / Smoking"}
+                        likesCount={108}
+                        leftIcon={"ios-ice-cream"}
+                        rightIcon={"ios-key"}
                     />
                     <SampleItem
-                        title={"Corporate Brochure"}
-                        subtitle={"Illustration / Print"}
-                        likesCount={138}
-                        leftIcon={"ios-attach"}
-                        rightIcon={"ios-search"}
+                        title={"A Real Turn Off"}
+                        subtitle={"Censorship / T.V."}
+                        likesCount={366}
+                        leftIcon={"ios-laptop"}
+                        rightIcon={"ios-leaf"}
                     />
                     <SampleItem
-                        title={"Corporate Brochure"}
-                        subtitle={"Illustration / Print"}
-                        likesCount={138}
-                        leftIcon={"ios-attach"}
-                        rightIcon={"ios-search"}
+                        title={"Are We Equal?"}
+                        subtitle={"Gender / Equity"}
+                        likesCount={23}
+                        leftIcon={"ios-female"}
+                        rightIcon={"ios-male"}
                     />
                     <SampleItem
-                        title={"Corporate Brochure"}
-                        subtitle={"Illustration / Print"}
-                        likesCount={138}
-                        leftIcon={"ios-attach"}
-                        rightIcon={"ios-search"}
+                        title={"Let’s Speed Up"}
+                        subtitle={"Laws / Speed"}
+                        likesCount={1976}
+                        leftIcon={"ios-pulse"}
+                        rightIcon={"ios-speedometer"}
                     />
                     <SampleItem
-                        title={"Corporate Brochure"}
-                        subtitle={"Illustration / Print"}
-                        likesCount={138}
-                        leftIcon={"ios-attach"}
-                        rightIcon={"ios-search"}
+                        title={"Helmet Heads Live"}
+                        subtitle={"Safety / Motorcycle"}
+                        likesCount={56}
+                        leftIcon={"ios-walk"}
+                        rightIcon={"ios-paper-plane"}
                     />
                 </Row>
                 <Row>
