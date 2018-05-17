@@ -4,6 +4,7 @@
     $height: 250px;
     $background-color: #8a8a8a;
     $transition-content: opacity .25s ease-in-out;
+    $position-top-left: 1px;
 
     width: 100%;
     height: $height;
@@ -12,8 +13,8 @@
     border-radius: $border-radius-base;
 
     &__content {
-        @include position($top: 1px, $left: 1px, $isAbsolute: true);
-        @include square_size(calc(100% - 2px));
+        @include position($top: $position-top-left, $left: $position-top-left, $position: absolute);
+        @include square_size(calc(100% - #{$position-top-left} * 2));
 
         cursor: pointer;
         opacity: 0;

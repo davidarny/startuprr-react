@@ -48,13 +48,9 @@
     $left: false,
     $bottom: false,
     $right: false,
-    $isAbsolute: false
+    $position: relative
 ) {
-    @if ($isAbsolute) {
-        position: absolute;
-    } @else {
-        position: relative;
-    }
+    position: $position;
     @if ($top) {
         top: $top;
     }

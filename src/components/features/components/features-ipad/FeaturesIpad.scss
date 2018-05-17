@@ -26,7 +26,7 @@
 
     &--landscape {
         @include background-image('./assets/ipad-landscape.png');
-        @include position($right: 5%, $bottom: -5%, $isAbsolute: true);
+        @include position($right: 5%, $bottom: -5%, $position: absolute);
         height: em($landscape-height);
         background-position: bottom center;
     }
