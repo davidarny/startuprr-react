@@ -7,6 +7,7 @@ $background-blur: 2px;
     @extend %bg-image-cover;
     @include background-image("./assets/header-background.jpg");
     @include square_size(100%);
+
     position: absolute;
     opacity: $background-opacity;
     filter: blur($background-blur);

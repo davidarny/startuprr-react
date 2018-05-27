@@ -3,4 +3,5 @@ export interface ISectionTitleProps {
     firstPart: string;
     lastPart: string;
     subtitle?: string;
+    isLined?: boolean;
 }

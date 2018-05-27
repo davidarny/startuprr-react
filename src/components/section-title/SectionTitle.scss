@@ -7,6 +7,9 @@
     $icons-aside-margin: 0.5em;
     $min-font: 20px;
     $max-font: 26px;
+    $padding-lines: 10px;
+    $height-lines: 6px;
+    $translate-y-lines: 21px;
 
     @include fluid-type($xs, $lg, $min-font, $max-font);
     text-align: center;
@@ -48,6 +51,31 @@
         &--right {
             margin-left: $icons-aside-margin;
             transform: rotate(180deg);
+        }
+    }
+
+    &--lined {
+        .section-title__word {
+            position: relative;
+        }
+
+        .section-title__inner {
+            background-color: $color-white;
+            display: inline-block;
+            position: relative;
+            padding: 0 $padding-lines;
+        }
+
+        .section-title__title {
+            position: relative;
+        }
+
+        .section-title__line {
+            border-top: 1px solid #dedede;
+            border-bottom: 1px solid #dedede;
+            width: 100%;
+            height: $height-lines;
+            transform: translateY($translate-y-lines);
         }
     }
 }

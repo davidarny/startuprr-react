@@ -11,6 +11,7 @@ export const Offerings: React.SFC = () => {
                 <Row>
                     <Col sm={12}>
                         <SectionTitle
+                            isLined={true}
                             focusPart={"first"}
                             firstPart={"What"}
                             lastPart={"we offer"}
