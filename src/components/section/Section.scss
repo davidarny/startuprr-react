@@ -6,14 +6,14 @@
     position: relative;
     padding: $base-padding 0;
     width: 100%;
-    color: $color-main;
+    color: $color-dark-grey;
 
     &__inner {
         @include square_size(100%);
     }
 
     &--dark {
-        background-color: $color-main;
-        color: $color-background;
+        background-color: $color-dark-grey;
+        color: $color-white;
     }
 }

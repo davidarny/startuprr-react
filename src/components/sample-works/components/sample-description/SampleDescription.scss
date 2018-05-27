@@ -4,7 +4,7 @@
     $margin-top: 35px;
 
     text-align: center;
-    color: $color-background;
+    color: $color-white;
     margin-top: $margin-top;
 }
 
@@ -32,7 +32,7 @@
     font-size: $font-size;
     margin-top: $margin-top;
 
-    > .icon {
+    > .romb-icon {
         @include square_size($size-icon);
 
         background: transparent;

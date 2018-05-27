@@ -11,9 +11,10 @@ export const Icon: React.SFC<IIconProps> = ({
     return (
         <i
             className={insertClassName(`
-            icon ion ion-${icon}
-            ${isRotated ? "icon--rotated" : ""}
-            ${isRelative ? "icon--relative" : ""}
+                romb-icon
+                icon ion ion-${icon}
+                ${isRotated ? "romb-icon--rotated" : ""}
+                ${isRelative ? "romb-icon--relative" : ""}
             `)}
         />
     );

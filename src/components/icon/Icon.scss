@@ -1,6 +1,6 @@
 @import "~assets/common.scss";
 
-.icon {
+.romb-icon {
     $icon-font-size: 26px;
     $icon-border-radius: 4px;
     $icon-square-size: 38px;
@@ -9,7 +9,7 @@
     @include position($top: 0, $left: 50%, $position: absolute);
     transform: translateY(-50%) translateX(-50%) rotate(45deg);
     font-size: $icon-font-size;
-    background-color: $color-secondary;
+    background-color: $color-persian-green;
     border-radius: $icon-border-radius;
 
     &:before {

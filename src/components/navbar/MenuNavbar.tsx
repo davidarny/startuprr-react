@@ -89,22 +89,6 @@ class MenuNavbar extends PureComponent<IMenuNavbarProps, IMenuNavbarState> {
                             eventKey={3}
                             className={"nav__item"}
                             data-scroll={true}
-                            href={"#more-features"}
-                        >
-                            More features
-                        </NavItem>
-                        <NavItem
-                            eventKey={4}
-                            className={"nav__item"}
-                            data-scroll={true}
-                            href={"#skills"}
-                        >
-                            Skills
-                        </NavItem>
-                        <NavItem
-                            eventKey={5}
-                            className={"nav__item"}
-                            data-scroll={true}
                             href={"#sample-works"}
                         >
                             Sample works

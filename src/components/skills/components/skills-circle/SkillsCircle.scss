@@ -14,14 +14,14 @@
     &__progress {
         @include square_size(120px - ($progress-border-width * 2));
         margin: $progress-border-width 0 0 $progress-border-width;
-        background-color: $color-main;
+        background-color: $color-dark-grey;
         display: inline-block;
         border-radius: 50%;
         position: relative;
     }
 
     &__title {
-        color: $color-secondary-text;
+        color: $color-grey;
         font-weight: 600;
         text-transform: uppercase;
         height: 20%;
@@ -57,13 +57,13 @@
     border-radius: 50%;
 
     @for $i from 0 through $loops {
-        $color-bar: $color-secondary;
-        $color-background-bar: $color-background;
+        $color-bar: $color-persian-green;
+        $color-background-bar: $color-white;
 
         &--#{$i*$step} {
             @if $i < $half {
                 $nextdeg: 90deg + ( $increment * $i );
-                background-image: linear-gradient(90deg, $color-main 50%, $color-main 50%, $color-main), linear-gradient($nextdeg, $color-bar 50%, $color-main 50%, $color-main);
+                background-image: linear-gradient(90deg, $color-dark-grey 50%, $color-dark-grey 50%, $color-dark-grey), linear-gradient($nextdeg, $color-bar 50%, $color-dark-grey 50%, $color-dark-grey);
             } @else {
                 $nextdeg: -90deg + ( $increment * ( $i - $half ) );
                 background-image: linear-gradient($nextdeg, $color-bar 50%, transparent 50%, transparent), linear-gradient(270deg, $color-bar 50%, $color-background-bar 50%, $color-background-bar);

@@ -1,0 +1,89 @@
+@import "~assets/common";
+
+.company-fact {
+    $font-size-count: 80px;
+    $color-romb: #484848;
+    $size-romb: 13px;
+    $border-radius-romb: 3px;
+    $position-romb: 25px;
+    $font-size-icon: 26px;
+    $size-icon-ion: 35px;
+    $color-line: #484848;
+    $color-subtitle: #606060;
+    $font-size-subtitle: 14px;
+    $margin-top-subtitle: 10px;
+
+    text-align: center;
+
+    &__count {
+        position: relative;
+        font-size: $font-size-count;
+        color: $color-white;
+        text-transform: uppercase;
+        font-style: italic;
+
+        &:before,
+        &:after {
+            @extend %center-vertical;
+            @include square_size($size-romb);
+
+            position: absolute;
+            content: '';
+            background-color: $color-romb;
+            border-radius: $border-radius-romb;
+            transform: rotate(45deg);
+        }
+
+        &:before {
+            left: $position-romb;
+        }
+
+        &:after {
+            right: $position-romb;
+        }
+
+        &:hover {
+            &:before,
+            &:after {
+                background-color: $color-persian-green;
+            }
+        }
+    }
+
+    &__icon {
+        position: relative;
+        font-size: $font-size-icon;
+        color: $color-persian-green;
+        text-transform: uppercase;
+
+        &__ion {
+            @include square_size($size-icon-ion);
+
+            vertical-align: top;
+            position: relative;
+            background-color: $color-dark-grey;
+
+            &:before {
+                @extend %center-all;
+            }
+        }
+
+        &:before {
+            @extend %center-all;
+
+            content: '';
+            background-color: #484848;
+            position: absolute;
+            width: 100%;
+            height: 1px;
+        }
+    }
+
+    &__subtitle {
+        margin-top: $margin-top-subtitle;
+        font-size: $font-size-subtitle;
+        color: $color-subtitle;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}

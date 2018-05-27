@@ -9,7 +9,7 @@
     cursor: pointer;
     border: 1px solid $button-border-color;
     border-radius: $border-radius-base;
-    color: $color-secondary-text;
+    color: $color-grey;
     text-transform: uppercase;
     line-height: $line-height;
     padding: $font-size;
@@ -25,14 +25,14 @@
     }
 
     &:hover {
-        background-color: $color-secondary;
-        color: $color-background;
-        border: 1px solid $color-secondary;
+        background-color: $color-persian-green;
+        color: $color-white;
+        border: 1px solid $color-persian-green;
     }
 
     &--active {
-        background-color: $color-secondary;
-        color: $color-background;
-        border: 1px solid $color-secondary;
+        background-color: $color-persian-green;
+        color: $color-white;
+        border: 1px solid $color-persian-green;
     }
 }

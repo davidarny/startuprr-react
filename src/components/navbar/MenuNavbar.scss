@@ -41,8 +41,8 @@
         font-weight: $font-weight-nav;
 
         .nav__item.active {
-            background-color: $color-secondary !important;
-            color: $color-background !important;
+            background-color: $color-persian-green !important;
+            color: $color-white !important;
         }
     }
 }
@@ -64,13 +64,13 @@
         cursor: pointer;
 
         &:hover {
-            color: $color-main;
+            color: $color-dark-grey;
             text-decoration: none;
         }
 
         & .active {
-            background-color: $color-secondary !important;
-            color: $color-background !important;
+            background-color: $color-persian-green !important;
+            color: $color-white !important;
         }
     }
 

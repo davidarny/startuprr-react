@@ -24,7 +24,7 @@
 
         &:hover {
             opacity: 1;
-            background-color: $color-secondary;
+            background-color: $color-persian-green;
         }
     }
 }
@@ -36,15 +36,15 @@
     width: 100%;
     text-align: center;
 
-    > .icon {
+    > .romb-icon {
         &:first-child {
-            color: $color-secondary;
-            background-color: $color-background;
+            color: $color-persian-green;
+            background-color: $color-white;
         }
 
         &:last-child {
-            color: $color-background;
-            background-color: $color-main;
+            color: $color-white;
+            background-color: $color-dark-grey;
         }
     }
 }
