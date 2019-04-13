@@ -4,6 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ![GitHub top language](https://img.shields.io/github/languages/top/DavidArutiunian/startuprr-react.svg)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/DavidArutiunian/startuprr-react.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/DavidArutiunian/startuprr-react.svg)
+![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/DavidArutiunian/startuprr-react.svg)
 
 
 Below you will find some information on how to perform common tasks.<br>
