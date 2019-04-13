@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+[![David](https://img.shields.io/david/DavidArutiunian/startuprr-react.svg)](https://github.com/DavidArutiunian/startuprr-react)
+![GitHub top language](https://img.shields.io/github/languages/top/DavidArutiunian/startuprr-react.svg)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/DavidArutiunian/startuprr-react.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/DavidArutiunian/startuprr-react.svg)
+
+
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
